@@ -14,6 +14,7 @@ export class AuthController {
 
   @Post('login')
   login(@Body() body: any) {
+    console.log("Started")
     return this.authService.login(body.email, body.password);
   }
 
